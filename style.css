@@ -3,6 +3,11 @@ html{
 
 
 }
+
+header{
+    background-color: grey;
+}
+
 main{
     display: flex;
 }
@@ -10,9 +15,11 @@ main{
 header h1{
     margin-bottom: 0;
 }
+
 header h2 {
     margin-bottom: 0.2rem;
     opacity: 0.6;
+
 }
 
 

@@ -5,6 +5,7 @@ function setup()
     const form = document.forms.entrada;
     form.addEventListener('submit', envia);
 }
+atualiza();
 let estado = 0;
 
     function envia(evento)
