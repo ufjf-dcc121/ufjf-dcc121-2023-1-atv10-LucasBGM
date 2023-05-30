@@ -1,6 +1,6 @@
 window.addEventListener('load', setup);
 
-import { estado } from "store.js";
+import store from "./store.js";
 
 function setup()
 {
@@ -14,11 +14,11 @@ atualiza();
     {
         evento.preventDefault();
         console.log('Formulário enviado!');
-        estado++;''
+        store.estado++;''
         atualiza();
     }
     function atualiza()
     {
     const ol = document.querySelector('ol');
-    ol.innerHTML = `<li>${estado}</li>`;
+    ol.innerHTML = `<li>${store.estado}</li>`;
     }
