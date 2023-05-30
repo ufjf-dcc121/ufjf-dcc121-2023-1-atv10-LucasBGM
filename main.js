@@ -1,9 +1,17 @@
-import store, { adicionar, getItems, items } from "./store.js";
+import { adicionar, getItens, remover } from "./store.js";
 
     const form = document.forms.entrada;
     form.addEventListener('submit', envia);
+    form.remover.addEventListener('click', remove);
 
 atualiza();
+function remove()
+{
+    console.log('Remove clickiado!');
+    remover();
+    atualiza();
+
+}
 
     function envia(evento)
     {
@@ -19,7 +27,7 @@ atualiza();
     {
     const ol = document.querySelector('ol');
     ol.innerHTML = "";
-    const itens = getItems();
+    const itens = getItens();
     for(let i = 0; i < itens.length; i++){
         const li = document.createElement('li');
         li.textContent = itens[i];
