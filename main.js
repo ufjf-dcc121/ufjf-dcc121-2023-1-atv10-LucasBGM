@@ -1,4 +1,7 @@
 window.addEventListener('load', setup);
+
+import { estado } from "store.js";
+
 function setup()
 {
 
@@ -6,7 +9,6 @@ function setup()
     form.addEventListener('submit', envia);
 }
 atualiza();
-let estado = 0;
 
     function envia(evento)
     {
